@@ -1,0 +1,287 @@
+:root {
+    --desert-sand: #EFC7A5ff;
+    --dun: #E7D3BCff;
+    --raw-umber: #8E5E43ff;
+    --coffee: #774B34ff;
+    --raw-umber-2: #9C6B50ff;
+}
+
+body {
+    background-image: url('/images/m5.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: var(--raw-umber);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar-text {
+    color: white;
+    font-size: 18px;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.navbar-logo h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-menu li {
+    margin-right: 20px;
+}
+
+.navbar-menu li:last-child {
+    margin-right: 0;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    background-color: var(--desert-sand);
+    color: var(--coffee);
+}
+
+.content {
+    text-align: center;
+    color: white;
+    padding: 100px 0;
+}
+
+.head {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.square-box {
+    width: 550px;
+    height: 200px;
+    border: 2px solid black;
+    color: rgb(52, 50, 50);
+    background-color: var(--dun);
+    border-radius: 10px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.vid-box {
+    width: 560px;
+    height: 310px;
+    border: 2px solid black;
+    color: rgb(52, 50, 50);
+    background-color: var(--dun);
+    border-radius: 10px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.square-box h1 {
+    font-size: 30px;
+    margin: 0;
+}
+
+.square-box p {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.stream-button {
+    background-color: var(--coffee);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.stream-button:hover {
+    background-color: var(--desert-sand);
+    color: var(--coffee);
+}
+
+/* Existing CSS styles for .head and .square-box remain unchanged */
+
+.schedule-section {
+    text-align: center;
+    margin-bottom: 40px;
+    width: 750px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.schedule-section h2 {
+    text-align: center;
+    width: 350px;
+    height: 100px;
+    border: 2px solid black;
+    color: rgb(52, 50, 50);
+    background-color: var(--dun);
+    border-radius: 10px;
+
+}
+
+.schedule-table {
+    width: 100%;
+    margin: 10px auto;
+    border-collapse: collapse;
+}
+
+.schedule-table th,
+.schedule-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.schedule-table th {
+    background-color: var(--raw-umber);
+    color: white;
+}
+
+.schedule-table tr:nth-child(even) {
+    background-color: var(--desert-sand);
+}
+
+.schedule-table tr:nth-child(odd) {
+    background-color: var(--raw-umber-2);
+}
+
+.schedule-section h2 {
+    font-size: 24px;
+    margin: 0;
+    color: var(--raw-umber);
+}
+
+.registration-section {
+    text-align: center;
+    margin: 40px auto;
+    padding: 20px;
+    width: 400px;
+    background-color: var(--dun);
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.registration-section h2 {
+    font-size: 24px;
+    margin: 0;
+    color: var(--raw-umber);
+}
+
+.registration-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.registration-section label {
+    font-weight: bold;
+    margin-top: 10px;
+    color: var(--raw-umber);
+}
+
+.registration-section input[type="text"],
+.registration-section input[type="tel"],
+.registration-section input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.registration-section textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.registration-section input[type="submit"] {
+    width: 70%;
+    /* Adjust the width as needed */
+    margin-top: 20px;
+    padding: 10px;
+    background-color: var(--raw-umber);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.registration-section input[type="submit"]:hover {
+    background-color: var(--coffee);
+}
+
+
+.about-us-section {
+    width: 560px;
+    height: 310px;
+    border: 2px solid black;
+    color: rgb(52, 50, 50);
+    background-color: var(--dun);
+    border-radius: 10px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.about-us-section h2 {
+    font-size: 30px;
+    margin: 0;
+}
+
+.about-us-section p {
+    font-size: 16px;
+    color: var(--coffee);
+    /* Customize the color as needed */
+}
