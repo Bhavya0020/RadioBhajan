@@ -7,7 +7,7 @@
 }
 
 body {
-    background-image: url('/images/m5.png');
+    background-image: url('images/m5.png');
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0;
