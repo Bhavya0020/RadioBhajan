@@ -112,9 +112,21 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-.square-box h1 {
+.box-head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.box-head img {
+    width: 75px;
+    height: 75px;
+}
+
+.box-head h1 {
     font-size: 30px;
     margin: 0;
+    margin-left: 10px;
 }
 
 .square-box p {
@@ -197,9 +209,10 @@ body {
 
 .registration-section {
     text-align: center;
-    margin: 40px auto;
+    margin: 10px auto;
     padding: 20px;
-    width: 400px;
+    width: 560px;
+    height: 465px;
     background-color: var(--dun);
     border-radius: 10px;
     border: 2px solid black;
@@ -245,7 +258,7 @@ body {
 .registration-section input[type="submit"] {
     width: 70%;
     /* Adjust the width as needed */
-    margin-top: 20px;
+    margin-top: 15px;
     padding: 10px;
     background-color: var(--raw-umber);
     color: white;
@@ -256,6 +269,23 @@ body {
 }
 
 .registration-section input[type="submit"]:hover {
+    background-color: var(--coffee);
+}
+
+.registration-section button[type="submit"] {
+    width: 70%;
+    /* Adjust the width as needed */
+    margin-top: 15px;
+    padding: 10px;
+    background-color: var(--raw-umber);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.registration-section button[type="submit"]:hover {
     background-color: var(--coffee);
 }
 
